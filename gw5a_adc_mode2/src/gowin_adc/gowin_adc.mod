@@ -1,0 +1,27 @@
+-series GW5A
+-device GW5A-25
+-device_version A
+-package MBGA121N
+-part_number GW5A-LV25MG121NES
+
+
+-mod_name Gowin_ADC
+-file_name gowin_adc
+-path C:/Users/rmk/Documents/NLS/FPGA/GowinSemi/SW/Projects/gw5a_adc_demo/src/gowin_adc/
+-type ADC
+-file_type vlg
+-adc_select ADC
+-adc_mode voltage
+-div 1
+-clk_sel osc
+-rate_change_ctrl 4
+-sample_cnt_sel 64
+-fscal_value 653
+-offset 0
+-dyn_bk_en true
+-voltageBus_glo_left true
+-voltageBus_glo_right true
+-pad_left true
+-pad_right true
+-voltageBus_vccx true
+-vccx true

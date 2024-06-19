@@ -1,0 +1,17 @@
+-d C:\Users\rmk\Documents\NLS\FPGA\GowinSemi\SW\Projects\gw5a_adc_mode2\impl\gwsynthesis\gw5a_adc_mode2.vg
+-p GW5A-25A-MBGA121N-1
+-pn GW5A-LV25MG121NES
+-cst C:\Users\rmk\Documents\NLS\FPGA\GowinSemi\SW\Projects\gw5a_adc_mode2\src\gw5a_adc_mode2.cst
+-cfg C:\Users\rmk\Documents\NLS\FPGA\GowinSemi\SW\Projects\gw5a_adc_mode2\impl\pnr\device.cfg
+-sdc C:\Users\rmk\Documents\NLS\FPGA\GowinSemi\SW\Projects\gw5a_adc_mode2\src\gw5a_adc_mode2.sdc
+-gao_crc 1110011010100110
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-enable_dsrm 0
+-rtl_gao

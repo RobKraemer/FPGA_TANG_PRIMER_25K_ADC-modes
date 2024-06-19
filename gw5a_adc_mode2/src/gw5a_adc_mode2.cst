@@ -1,0 +1,57 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//Tool Version: V1.9.9.02
+//Part Number: GW5A-LV25MG121NES
+//Device: GW5A-25
+//Device Version: A
+//Created Time: Wed 05 01 21:40:58 2024
+
+// Note: If the constraints are maintained in the Floorplaner and saved there,
+//       this file will be overridden, loosing all comments and formatting !
+//       As a precaution, from time to time, copy it into <project>.cst.bak
+
+
+// The main (50 MHz) clock input
+IO_LOC  "clk"         E2;
+IO_PORT "clk"         IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+
+
+// ADC
+
+// IOT61A [H5] / IOT61B [J5]
+IO_LOC  "i_analog1p"    H5
+IO_PORT "i_analog1p"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC  "i_analog1n"    J5
+IO_PORT "i_analog1n"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+// IOT63A [L5] / IOT63B [K5]
+IO_LOC  "i_analog2p"    L5
+IO_PORT "i_analog2p"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC  "i_analog2n"    K5
+IO_PORT "i_analog2n"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+// IOT66A [H8] / IOT66B [H7]
+IO_LOC  "i_analog3p"    H8
+IO_PORT "i_analog3p"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC  "i_analog3n"    H7
+IO_PORT "i_analog3n"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+// IOT68A [G7] / IOT68B [G8]
+IO_LOC  "i_analog4p"    G7
+IO_PORT "i_analog4p"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC  "i_analog4n"    G8
+IO_PORT "i_analog4n"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+// IOT72A [F5] / IOT72B [G5]
+IO_LOC  "i_analog5p"    F5
+IO_PORT "i_analog5p"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC  "i_analog5n"    G5
+IO_PORT "i_analog5n"    IO_TYPE=ADC_IN PULL_MODE=NONE BANK_VCCIO=3.3;
+
+
+// 2 LEDs, labeled 'ready' and 'done' on the dock board.
+// To be able to use them, they have to be configured 'use as regular IO'
+// in: Project - Configuration - DualPurposePins.  
+IO_LOC  "o_led_ready" E8;    // Ready
+IO_PORT "o_led_ready" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC  "o_led_done"  D7;    // Done
+IO_PORT "o_led_done"  IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
