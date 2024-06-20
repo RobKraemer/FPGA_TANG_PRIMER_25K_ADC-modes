@@ -1,0 +1,33 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//Tool Version: V1.9.9.02
+//Part Number: GW5A-LV25MG121NES
+//Device: GW5A-25
+//Device Version: A
+//Created Time: Wed 05 01 21:40:58 2024
+
+// Note: If the constraints are maintained in the Floorplaner and saved there,
+//       this file will be overridden, loosing all comments and formatting !
+//       As a precaution, from time to time, copy it into <project>.cst.bak
+
+
+// The main (50 MHz) clock input
+IO_LOC  "clk"         E2;
+IO_PORT "clk"         IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+
+// ADC
+// Input signal
+USE_ADC_SRC bus0 IOT56;
+
+
+
+// 2 LEDs, labelled 'ready' and 'done' on the dock board.
+// To be able to use them, they have to be configured 'use as regular IO'
+// in: Project - Configuration - DualPurposePins.  
+IO_LOC  "o_led_ready" E8;    // Ready
+IO_PORT "o_led_ready" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC  "o_led_done"  D7;    // Done
+IO_PORT "o_led_done"  IO_TYPE=LVCMOS33 PULL_MODE=UP;
+

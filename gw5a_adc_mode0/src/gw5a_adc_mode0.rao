@@ -1,0 +1,51 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Lite</Mode>
+    <AoCore_Lite index="0" sample_clock="clk_count[5]" trig_type="0" capture_amount="2048" implemention="0" input_register_enabled="0" capture_init_data_enabled="0" module_name="top">
+        <SignalList>
+            <Signal capture_enable="true">adc_clk</Signal>
+            <Signal capture_enable="true">adc_start</Signal>
+            <Signal capture_enable="true">adc_ready</Signal>
+            <Bus capture_enable="true" name="adc_counts[3:0]">
+                <Signal>adc_counts[3]</Signal>
+                <Signal>adc_counts[2]</Signal>
+                <Signal>adc_counts[1]</Signal>
+                <Signal>adc_counts[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="adc_value[13:0]">
+                <Signal>adc_value[13]</Signal>
+                <Signal>adc_value[12]</Signal>
+                <Signal>adc_value[11]</Signal>
+                <Signal>adc_value[10]</Signal>
+                <Signal>adc_value[9]</Signal>
+                <Signal>adc_value[8]</Signal>
+                <Signal>adc_value[7]</Signal>
+                <Signal>adc_value[6]</Signal>
+                <Signal>adc_value[5]</Signal>
+                <Signal>adc_value[4]</Signal>
+                <Signal>adc_value[3]</Signal>
+                <Signal>adc_value[2]</Signal>
+                <Signal>adc_value[1]</Signal>
+                <Signal>adc_value[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="adc_current[13:0]">
+                <Signal>adc_current[13]</Signal>
+                <Signal>adc_current[12]</Signal>
+                <Signal>adc_current[11]</Signal>
+                <Signal>adc_current[10]</Signal>
+                <Signal>adc_current[9]</Signal>
+                <Signal>adc_current[8]</Signal>
+                <Signal>adc_current[7]</Signal>
+                <Signal>adc_current[6]</Signal>
+                <Signal>adc_current[5]</Signal>
+                <Signal>adc_current[4]</Signal>
+                <Signal>adc_current[3]</Signal>
+                <Signal>adc_current[2]</Signal>
+                <Signal>adc_current[1]</Signal>
+                <Signal>adc_current[0]</Signal>
+            </Bus>
+        </SignalList>
+    </AoCore_Lite>
+    <GAO_ID>1100101100010111</GAO_ID>
+</GAO_CONFIG>
