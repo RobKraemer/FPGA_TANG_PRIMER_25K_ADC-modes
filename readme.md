@@ -41,8 +41,8 @@ in my understanding it's completly okay to just tie the negative part of the sig
 Also note that the measurement range is only around one volt.
     <table>
     <tr><th>Channel</th><th>Id.</th><th>Name</th><th>Bank</th><th>PMOD</th><th>Pin at 40pin</th></tr>
-    <tr><th>0</th><th>Signal J8</th><th>IOT56A</th><th>1</th><th>0 / J6</th><th>5</th></tr>
-    <tr><th> </th><th>Signal K8</th><th>IOT56B</th><th>1</th><th>0 / J6</th><th>6</th></tr>
+    <tr><th>0</th><th>Signal J8</th><th>IOT56A</th><th>1</th><th></th><th>5</th></tr>
+    <tr><th> </th><th>Signal K8</th><th>IOT56B</th><th>1</th><th></th><th>6</th></tr>
     </table>
 
 
@@ -51,10 +51,10 @@ It relies on the trick (?) to use the two `VSENCTL` modes `GLO_LEFT` and `GLO_RI
 Here, in addition to the signal IOT56 from the above example, the signal IOT26 (F2/F1, pins 16 and 15 on the 40 pin connector) is used as the second analog input. 
     <table>
     <tr><th>Channel</th><th>Id.</th><th>Name</th><th>Bank</th><th>PMOD</th><th>Pin at 40pin</th></tr>
-    <tr><th>0</th><th>Signal J8</th><th>IOT56A</th><th>1</th><th>0 / J6</th><th>5</th></tr>
-    <tr><th> </th><th>Signal K8</th><th>IOT56B</th><th>1</th><th>0 / J6</th><th>6</th></tr>
-    <tr><th>1</th><th>Signal F2</th><th>IOT26A</th><th>1</th><th>1 / J5</th><th>5</th></tr>
-    <tr><th> </th><th>Signal F1</th><th>IOT26B</th><th>1</th><th>1 / J5</th><th>6</th></tr>
+    <tr><th>0</th><th>Signal J8</th><th>IOT56A</th><th>1</th><th></th><th>5</th></tr>
+    <tr><th> </th><th>Signal K8</th><th>IOT56B</th><th>1</th><th></th><th>6</th></tr>
+    <tr><th>1</th><th>Signal F2</th><th>IOT26A</th><th>1</th><th></th><th>25</th></tr>
+    <tr><th> </th><th>Signal F1</th><th>IOT26B</th><th>1</th><th></th><th>26</th></tr>
     </table>
 
 3. The last repository, `Mode 2`, allows to multiplex up to five external analog input signals to the ADC.
